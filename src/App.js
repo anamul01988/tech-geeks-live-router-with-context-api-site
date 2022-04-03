@@ -14,8 +14,8 @@ function App() {
   const [blogs, setBlogs] = useState([]);
 
   return (
-    // <BlogContext.Provider value={[blogs, setBlogs]}>
-     <>
+     <BlogContext.Provider value={[blogs, setBlogs]}>
+     {/* <> */}
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -25,8 +25,8 @@ function App() {
 
         <Route path='/blog/:id' element={<BlogDetails />} />
       </Routes>
-     </>
-  //   /* </BlogContext.Provider> */
+    {/* </> */}
+    </BlogContext.Provider> 
   );
 }
 

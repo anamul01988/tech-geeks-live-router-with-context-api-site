@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import Blog from "../Blog/Blog";
 import "./Home.css";
-// import { BlogContext } from "../../App";
+import { BlogContext } from "../../App";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([]);
-  // const [blogs, setBlogs] = useContext(BlogContext);
+  // const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useContext(BlogContext);
 
   useEffect(() => {
     fetch("data.json")

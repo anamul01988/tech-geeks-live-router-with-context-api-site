@@ -9,7 +9,7 @@ const Blog = ({ blog }) => {
   const { imageURL, title, blog: blogBody, admin, _id } = blog;
   return (
     <div className='blog-container'>
-      <button onClick={()=>navigate('/videos')}> take me to login</button>
+      {/* <button onClick={()=>navigate('/videos')}> take me to login</button> */}
       <div className='blog-image-container'>
         <img src={imageURL} alt='' />
       </div>
