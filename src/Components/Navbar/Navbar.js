@@ -5,6 +5,8 @@ import "./Navbar.css";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  console.log(location)
   const { pathname } = useLocation();
 
   return (
@@ -61,7 +63,7 @@ const Navbar = () => {
   //     </NavLink>
   //   </div>
   // </nav>
-  
+
   );
 };
 

@@ -9,7 +9,7 @@ const BlogDetails = () => {
     // console.log(x);
     // console.log(x.id);
   const { id } = useParams();
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 //   const [blogs] = useContext(BlogContext);
 
 //   const blog = blogs.find((blog) => blog._id == id);
@@ -17,20 +17,20 @@ const BlogDetails = () => {
   return (
     <>
       <div className='header-gradient' />
-      <h3>this is blog details {id}</h3>
-      {/* <div>
+      {/* <h3>this is blog details {id}</h3> */}
+      <div>
         <button className='back-button' onClick={() => navigate(-1)}>
-          <BsChevronLeft />
+          {/* <BsChevronLeft /> */}
           <p>Back</p>
         </button>
-        <div className='blog-details'>
+        {/* <div className='blog-details'>
           <div className='blog-image'>
             <img src={blog?.imageURL} alt='' />
           </div>
           <h1>{blog?.title}</h1>
           <p>{blog?.blog}</p>
-        </div>
-      </div> */}
+        </div> */}
+      </div>
     </>
   );
 };
