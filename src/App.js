@@ -23,7 +23,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='*' element={<NotFound/>} />
 
-        {/* <Route path='/blog/:id' element={<BlogDetails />} /> */}
+        <Route path='/blog/:id' element={<BlogDetails />} />
       </Routes>
      </>
   //   /* </BlogContext.Provider> */
